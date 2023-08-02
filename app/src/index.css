@@ -1,38 +1,55 @@
 body {
-  background-color: #eee;
+  background: url('https://wallpapershome.com/images/wallpapers/polygon-1920x1080-4k-hd-wallpaper-android-wallpaper-triangle-3519.jpg');
+  
+  background-size: cover;
   display: flex;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
-.contract, .existing-contracts {
+.contract,
+.existing-contracts {
   margin: 20px;
   display: inline-block;
   padding: 40px;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.265);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 h1 {
   margin: 10px;
   padding: 10px;
   border-bottom: 1px solid #eee;
+  color: #ffffff;
 }
 
 label {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  color: #aaa;
+  color: #ffffff;
   margin: 20px;
 }
 
 input[type="text"] {
   padding: 6px;
   font-size: 18px;
+  position: relative;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 10px;
+}
+input[type="text"]:focus{
+ border: 2px solid #6ef995;
 }
 
 .button {
-  background-color: #f58427;
+  background-color: #6ef995;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -42,12 +59,18 @@ input[type="text"] {
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
+  position: relative;
 }
 
 .existing-contract ul {
   padding: 10px;
   margin: 20px;
-  background-color: #eee;
+  background: rgba(255, 255, 255, 0.265);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .existing-contract ul > li {
@@ -65,6 +88,6 @@ input[type="text"] {
 }
 
 .existing-contract .complete {
-  color: #5aa75a;
+  color: #ffffff;
   text-align: center;
 }
