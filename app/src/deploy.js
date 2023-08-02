@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import Escrow from './artifacts/Escrow.json';
+import Escrow from '../src/artifacts/Escrow.json';
 
 export default async function deploy(signer, arbiter, beneficiary, value) {
   const factory = new ethers.ContractFactory(
